@@ -1,10 +1,11 @@
-package com.example.springcore1.repository;
+package com.example.springcore1.member;
 
-import com.example.springcore1.domain.Member;
+import com.example.springcore1.member.Member;
+import com.example.springcore1.member.MemberRepository;
 
 import java.util.*;
 
-public class MemoryMemberRepository implements MemberRepository{
+public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
 
     @Override

@@ -1,7 +1,9 @@
-package com.example.springcore1.service;
+package com.example.springcore1.discount;
 
-import com.example.springcore1.domain.Grade;
-import com.example.springcore1.domain.Member;
+import com.example.springcore1.member.Grade;
+import com.example.springcore1.member.Member;
+import com.example.springcore1.member.MemberService;
+import com.example.springcore1.member.MemberServiceImpl;
 import org.junit.jupiter.api.*;
 import static org.assertj.core.api.Assertions.*;
 

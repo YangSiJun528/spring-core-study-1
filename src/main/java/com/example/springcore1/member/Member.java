@@ -1,4 +1,4 @@
-package com.example.springcore1.domain;
+package com.example.springcore1.member;
 
 public class Member {
     private Long id;

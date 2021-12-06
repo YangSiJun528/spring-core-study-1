@@ -1,6 +1,6 @@
-package com.example.springcore1.repository;
+package com.example.springcore1.member;
 
-import com.example.springcore1.domain.Member;
+import com.example.springcore1.member.Member;
 
 public interface MemberRepository {
     void save(Member member);
