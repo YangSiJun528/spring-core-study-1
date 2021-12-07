@@ -1,4 +1,4 @@
-package com.example.springcore1.discount;
+package com.example.springcore1.member;
 
 import com.example.springcore1.member.Grade;
 import com.example.springcore1.member.Member;
@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.*;
 @DisplayName("MemberService 클래스의")
 class MemberServiceTest {
 
-    private MemberService memberService = new MemberServiceImpl();
+    private MemberService memberService = new MemberServiceImpl(new MemoryMemberRepository());
 
     @DisplayName("join 메소드는")
     @Nested

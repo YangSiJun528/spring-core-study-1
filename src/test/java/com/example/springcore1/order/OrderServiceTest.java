@@ -1,5 +1,6 @@
 package com.example.springcore1.order;
 
+import com.example.springcore1.AppConfig;
 import com.example.springcore1.member.Grade;
 import com.example.springcore1.member.Member;
 import com.example.springcore1.member.MemberService;
@@ -21,8 +22,10 @@ class OrderServiceTest {
 
     @BeforeEach
     void setup() {
-        orderService = new OrderServiceImpl();
-        memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+
+        orderService = appConfig.orderService();
+        memberService = appConfig.memberService();
 
         basicMember = new Member(1L, "BASIC", Grade.BASIC);
         vipMember = new Member(2L, "VIP", Grade.VIP);
